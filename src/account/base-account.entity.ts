@@ -6,4 +6,8 @@ export abstract class BaseAccount {
         this._number = accountNumber;
         this._owner = owner;
     }
+
+    getDescription(): string {
+        return `Account Number is: ${this._number} Owned by: ${this._owner}`;
+    }
 }
